@@ -80,24 +80,20 @@ export default function Footer() {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Your Name</h3>
+            <h3 className="text-lg font-bold">Karan Kumar Bind</h3>
             <p className="text-sm text-blue-100">
               A passionate full-stack developer specializing in building exceptional digital experiences.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/karantiger" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5 text-blue-100 hover:text-white transition-colors" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://linkedin.com/in/karantiger" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5 text-blue-100 hover:text-white transition-colors" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter className="h-5 w-5 text-blue-100 hover:text-white transition-colors" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="mailto:your.email@example.com">
+              <Link href="mailto:karantiger9369@gmail.com">
                 <Mail className="h-5 w-5 text-blue-100 hover:text-white transition-colors" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -115,12 +111,6 @@ export default function Footer() {
               </Link>
               <Link href="#current-project" className="text-sm text-blue-100 hover:text-white transition-colors">
                 Current Project
-              </Link>
-              <Link href="#projects" className="text-sm text-blue-100 hover:text-white transition-colors">
-                Projects
-              </Link>
-              <Link href="#certificates" className="text-sm text-blue-100 hover:text-white transition-colors">
-                Certificates
               </Link>
               <Link href="#contact" className="text-sm text-blue-100 hover:text-white transition-colors">
                 Contact
@@ -154,7 +144,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-blue-dark-700 text-center text-sm text-blue-100">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Karan Kumar Bind. All rights reserved.</p>
         </div>
       </div>
     </footer>

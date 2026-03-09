@@ -31,9 +31,7 @@ export default function Navbar() {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Current Project", href: "#current-project" },
-    { name: "Projects", href: "#projects" },
-    { name: "Certificates", href: "#certificates" },
-    { name: "Coding Profiles", href: "#coding-profiles" },
+    // { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ]
 
@@ -52,7 +50,7 @@ export default function Navbar() {
           <Link href="#" className="flex items-center">
             {useLogo === "photo" ? (
               <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-primary">
-                <Image src="/placeholder.svg?height=40&width=40" alt="Your Name" fill className="object-cover" />
+                <Image src="https://avatars.githubusercontent.com/u/134210243?v=4" alt="Your Name" fill className="object-cover" />
               </div>
             ) : (
               <span className="text-xl font-bold text-gradient-blue">Your Name</span>
@@ -79,43 +77,14 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <Button variant="outline" size="sm" className="ml-2" asChild>
-              <a href="/resume.pdf" download="YourName_Resume.pdf">
-                <FileDown className="mr-2 h-4 w-4" />
-                Resume
-              </a>
-            </Button>
-
-            {/* Theme Toggle */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="ml-2"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="flex items-center md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="mr-2"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-6 w-8" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -125,14 +94,14 @@ export default function Navbar() {
                     {useLogo === "photo" ? (
                       <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-primary">
                         <Image
-                          src="/placeholder.svg?height=40&width=40"
-                          alt="Your Name"
+                          src="https://avatars.githubusercontent.com/u/134210243?v=4"
+                          alt="Karan Kumar Bind"
                           fill
                           className="object-cover"
                         />
                       </div>
                     ) : (
-                      <span className="text-xl font-bold text-gradient-blue">Your Name</span>
+                      <span className="text-xl font-bold text-gradient-blue">Karan Kumar Bind</span>
                     )}
                     <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                       <X className="h-5 w-5" />
@@ -159,19 +128,12 @@ export default function Navbar() {
                         {link.name}
                       </Link>
                     ))}
-
-                    <Button variant="outline" size="sm" className="w-full justify-start" asChild>
-                      <a href="/resume.pdf" download="YourName_Resume.pdf">
-                        <FileDown className="mr-2 h-4 w-4" />
-                        Download Resume
-                      </a>
-                    </Button>
                   </nav>
 
                   <div className="mt-auto pt-6 border-t">
                     <div className="flex items-center space-x-4">
                       <Link
-                        href="https://github.com"
+                        href="https://github.com/karantiger"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground transition-colors"
@@ -179,7 +141,7 @@ export default function Navbar() {
                         GitHub
                       </Link>
                       <Link
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/karantiger"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground transition-colors"

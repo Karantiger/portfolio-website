@@ -13,9 +13,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
+  title: "Karan Kumar Bind - Portfolio",
   description: "Personal portfolio showcasing projects, certificates, and coding achievements",
-    generator: 'v0.dev'
+    generator: 'Karan Kumar Bind'
 }
 
 export default function RootLayout({

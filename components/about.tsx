@@ -24,12 +24,8 @@ export default function About() {
     "MongoDB",
     "PostgreSQL",
     "Tailwind CSS",
-    "Git",
-    "Docker",
-    "AWS",
-    "CI/CD",
-    "GraphQL",
-    "Redux",
+    "Git"
+
   ]
 
   return (
@@ -54,8 +50,8 @@ export default function About() {
             className="relative aspect-square max-w-md mx-auto"
           >
             <div className="absolute inset-0 border-2 border-primary rounded-lg transform translate-x-4 translate-y-4"></div>
-            <div className="relative h-full w-full overflow-hidden rounded-lg">
-              <Image src="/placeholder.svg?height=400&width=400" alt="Profile" fill className="object-cover" />
+            <div className="relative min-h-[400px] min-w-[400px] overflow-hidden rounded-lg">
+              <Image src="https://avatars.githubusercontent.com/u/134210243?v=4" alt="Profile" fill className="object-cover" />
             </div>
           </motion.div>
 
@@ -68,20 +64,13 @@ export default function About() {
             <h3 className="text-2xl font-bold">Who am I?</h3>
             <p className="text-muted-foreground">
               I'm a passionate full-stack developer with a strong focus on creating efficient, scalable, and
-              user-friendly applications. With over X years of experience in the industry, I've worked on a variety of
+              user-friendly applications. I've worked on a variety of
               projects ranging from small business websites to complex enterprise applications.
             </p>
             <p className="text-muted-foreground">
               My approach to development combines technical expertise with creative problem-solving. I believe in
               writing clean, maintainable code and staying up-to-date with the latest technologies and best practices.
             </p>
-
-            <Button variant="outline" className="mt-2" asChild>
-              <a href="/resume.pdf" download="YourName_Resume.pdf">
-                <FileDown className="mr-2 h-4 w-4" />
-                Download Resume
-              </a>
-            </Button>
 
             <div>
               <h3 className="text-2xl font-bold mb-4">My Skills</h3>
@@ -92,21 +81,6 @@ export default function About() {
                   </Badge>
                 ))}
               </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <Card>
-                <CardContent className="p-4 flex flex-col items-center">
-                  <span className="text-3xl font-bold text-primary">5+</span>
-                  <span className="text-sm text-muted-foreground">Years Experience</span>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-4 flex flex-col items-center">
-                  <span className="text-3xl font-bold text-primary">50+</span>
-                  <span className="text-sm text-muted-foreground">Projects Completed</span>
-                </CardContent>
-              </Card>
             </div>
           </motion.div>
         </div>

@@ -11,7 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -142,17 +142,17 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-muted-foreground">your.email@example.com</p>
+                  <p className="text-muted-foreground">karantiger9369@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="bg-primary/10 p-3 rounded-full mr-4">
-                  <Phone className="h-6 w-6 text-primary" />
+                  <Linkedin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">+1 (123) 456-7890</p>
+                  <h4 className="font-medium">LinkedIn</h4>
+                  <p className="text-muted-foreground">in/karantiger</p>
                 </div>
               </div>
 
@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Ahmedabad</p>
                 </div>
               </div>
             </div>

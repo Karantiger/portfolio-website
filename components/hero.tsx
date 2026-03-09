@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, FileDown, Instagram } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
@@ -33,7 +33,7 @@ export default function Hero() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white">
               <span className="text-primary">Hello, I'm </span>
-              <span className="text-gradient-blue">Your Name</span>
+              <span className="text-gradient-blue">Karan Kumar Bind</span>
             </h1>
           </motion.div>
 
@@ -58,12 +58,6 @@ export default function Hero() {
             <Button variant="outline" asChild className="text-white border-white hover:bg-white/10">
               <Link href="#contact">Contact Me</Link>
             </Button>
-            <Button variant="secondary" asChild>
-              <a href="/resume.pdf" download="YourName_Resume.pdf">
-                <FileDown className="mr-2 h-4 w-4" />
-                Download CV
-              </a>
-            </Button>
           </motion.div>
 
           <motion.div
@@ -72,19 +66,26 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/karantiger" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="rounded-full text-white hover:bg-white/10">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://linkedin.com/in/karantiger" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="rounded-full text-white hover:bg-white/10">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:your.email@example.com">
+            {/* Instagram */}
+            <Link href="https://instagram.com/karan.thetiger" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="rounded-full text-white hover:bg-white/10">
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Button>
+            </Link>
+            <Link href="mailto:your.karantiger9369@gmail.com">
               <Button variant="ghost" size="icon" className="rounded-full text-white hover:bg-white/10">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>

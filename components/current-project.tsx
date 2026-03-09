@@ -27,24 +27,22 @@ const currentProject = {
   ],
   images: [
     {
-      src: "/placeholder.svg?height=600&width=1000",
+      src: "/01.png",
       alt: "Dashboard overview showing sales analytics",
     },
     {
-      src: "/placeholder.svg?height=600&width=1000",
+      src: "/02.png",
       alt: "Inventory management interface",
     },
     {
-      src: "/placeholder.svg?height=600&width=1000",
+      src: "/03.png",
       alt: "Customer insights and segmentation",
     },
     {
-      src: "/placeholder.svg?height=600&width=1000",
+      src: "/04.png",
       alt: "Order processing workflow",
     },
   ],
-  githubUrl: "https://github.com",
-  liveUrl: "https://example.com",
 }
 
 export default function CurrentProject() {
@@ -181,21 +179,6 @@ export default function CurrentProject() {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-            </div>
-
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Button asChild variant="outline" className="border-blue-100 text-blue-100 hover:bg-blue-dark-700">
-                <Link href={currentProject.githubUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-4 w-4 mr-2" />
-                  View Code
-                </Link>
-              </Button>
-              <Button asChild>
-                <Link href={currentProject.liveUrl} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Live Demo
-                </Link>
-              </Button>
             </div>
           </motion.div>
         </div>
